@@ -10,7 +10,8 @@ public class TimeFormat {
 		// It then concatenates the resulting string with the rightmost hour-digit,
 		// and then uses parseInt to cast the resulting string as an int.
 		int hours = Integer.parseInt("" + args[0].charAt(0) + args[0].charAt(1));
-		// Does the same with the minutes part of the input.
+		// The following statement handles the minutes part of the input.
+		// it concatenates the empty string "" with the leftmost digits.
 		String minutes = "" + args[0].charAt(3) + args[0].charAt(4);
 		if (hours<=12) {
 			System.out.println(hours + ":" + minutes + " AM");
